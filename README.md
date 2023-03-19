@@ -23,6 +23,9 @@ To use this contract, simply deploy it to the Ethereum network and have both the
 
 Once the buyer is satisfied with the goods or services provided, they can approve the transaction by calling the approve function. At this point, the payment amount will be transferred to the seller, the seller's deposit will be returned to the seller, and the remaining deposit amount will be returned to the buyer.
 
+## Future Work
+Test out the code and add tests to this repo.
+
 ## License
 This code is licensed under the BSD 3-Clause License. See License file. 
 
