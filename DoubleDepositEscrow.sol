@@ -8,6 +8,7 @@ contract DoubleDepositEscrow {
     bool public isApproved;
     
     constructor(address payable _buyer, address payable _seller, uint _paymentAmount, uint _depositAmount) {
+        require(_depositAmount > _paymentAmount, "Deposit amount must be greater than payment amount");
         buyer = _buyer;
         seller = _seller;
         paymentAmount = _paymentAmount;
