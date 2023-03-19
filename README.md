@@ -1,4 +1,4 @@
-# double_deposit_escrow_simple
+# Dual-Deposit Escrow Smart Contract
 
 This is a simple implementation of a dual-deposit escrow Ethereum smart contract that facilitates a transaction between a buyer and a seller. The contract holds the funds in escrow until the buyer approves the transaction, at which point the funds are released to the seller. It is intended to protect buyers and sellers of any physical or digital good or service from cheating each other.
 
@@ -9,7 +9,6 @@ This is a simple implementation of a dual-deposit escrow Ethereum smart contract
 * Escrow Functionality: The contract holds the funds in escrow until the buyer approves the transaction, at which point the funds are released to the seller.
 
 ## Vulnerabilities
-
 Please note that this contract is presented as an illustration only. It may be vulnerable to reentrancy attacks, front-running attacks, DoS attacks, insecure deposit amounts, and no time limit for delivery. Please use caution when deploying this contract in a live environment.
 
 ## Usage
@@ -17,5 +16,8 @@ To use this contract, simply deploy it to the Ethereum network and have both the
 
 Once the buyer is satisfied with the goods or services provided, they can approve the transaction by calling the approve function. At this point, the payment amount will be transferred to the seller, the seller's deposit will be returned to the seller, and the remaining deposit amount will be returned to the buyer.
 
-##License
+## License
 This code is licensed under the BSD 3-Clause License. See License file. 
+
+Contributed by Bhaskar Krishnamachari
+(c) 2023, University of Southern California
