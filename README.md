@@ -19,5 +19,10 @@ Once the buyer is satisfied with the goods or services provided, they can approv
 ## License
 This code is licensed under the BSD 3-Clause License. See License file. 
 
-Contributed by Bhaskar Krishnamachari
-(c) 2023, University of Southern California
+Developed by:
+Autonomous Networks Research Group (ANRG)
+University of Southern California
+http://anrg.usc.edu/
+
+Contributors:
+Bhaskar Krishnamachari (bkrishna@usc.edu)
