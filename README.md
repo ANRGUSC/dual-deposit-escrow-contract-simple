@@ -11,7 +11,7 @@ The implementation presented here is a highy simplified and at the same time mor
 * Escrow Functionality: The contract holds the funds in escrow until the buyer approves the transaction, at which point the funds are released to the seller.
 
 ## Vulnerabilities
-Please note that this contract is presented as an illustration only. It may be vulnerable to reentrancy attacks, front-running attacks, DoS attacks, insecure deposit amounts, and no time limit for delivery. Please use caution when deploying this contract in a live environment.
+Please note that this contract, which was generated with assistance from ChatGPT, is presented as an illustration only. It may be vulnerable to reentrancy attacks, front-running attacks, DoS attacks, insecure deposit amounts, and no time limit for delivery. Please use caution when deploying this contract in a live environment.
 
 ## Usage
 To use this contract, simply deploy it to the Ethereum network and have both the buyer and the seller send their deposits to the contract address using the buyer_deposit and seller_deposit functions. Then, the seller should deliver the goods or services to the buyer off-chain.
