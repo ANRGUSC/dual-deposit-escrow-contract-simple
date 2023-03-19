@@ -4,6 +4,8 @@ This is a simple implementation of a dual-deposit escrow Ethereum smart contract
 
 The implementation presented here is a highy simplified and at the same time more general version of the proposal in the following paper (which had additional features that could allow a contract to verify delivery of a known digital good), which proves that the subgame perfect Nash Equilibrium of the Stackelberg Game implied by this contract corresponds to both the buyer and seller behaving in an honest fashion (i.e. not cheating each other), so long as they are both rational: Aditya Asgaonkar, Bhaskar Krishnamachari, “Solving the Buyer and Seller’s Dilemma: A Dual-Deposit Escrow Smart Contract for Provably Cheat-Proof Delivery and Payment for a Digital Good without a Trusted Mediator,” IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2019), Seoul, South Korea, May, 2019.
 
+![DDE Contract Illustration](dde.png)
+
 ## Features
 
 * Deposit Amount: The contract allows for the deposit amount to be set and initialized to a specific value.
