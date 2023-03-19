@@ -16,9 +16,3 @@ The paymentAmount variable represents the amount of funds that will be transferr
 
 ### depositAmount
 The depositAmount variable represents the amount of funds that the buyer and seller must each deposit into the contract in order to initiate the transaction. The deposit amount is specified and initialized when the contract is deployed.
-
-### buyerDeposit
-The buyerDeposit variable stores the amount of funds that the buyer has deposited into the contract.
-
-### sellerDeposit
-The sellerDeposit variable stores the amount of funds that the seller has deposited into the contract.
