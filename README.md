@@ -17,7 +17,7 @@ The following figure shows how the implemented contract works, conceptually:
 * Payment Amount: The contract allows for the payment amount to be set and initialized to a specific value.
 * Escrow Functionality: The contract holds the funds in escrow until the buyer approves the transaction, at which point the funds are released to the seller.
 
-## Vulnerabilities
+## Caveat: Potential Vulnerabilities
 Please note that this contract, which was generated with assistance from ChatGPT, is presented as an illustration only. It may be vulnerable to reentrancy attacks, front-running attacks, DoS attacks, insecure deposit amounts, and no time limit for delivery. Please use caution when deploying this contract in a live environment.
 
 ## Usage
