@@ -1,4 +1,4 @@
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.18;
 
 contract DoubleDepositEscrow {
     address payable public buyer;
@@ -42,9 +42,9 @@ contract DoubleDepositEscrow {
         isApproved = true;
         
         //Perform external calls 
-        require(seller.transfer(paymentAmount), "Payment to seller failed.");
-        require(seller.transfer(depositAmount), "Deposit refund to seller failed.");
-        require(buyer.transfer(depositAmount - paymentAmount), "Residual deposit refund to buyer failed.");                      
+        require(seller.send(paymentAmount), "Payment to seller failed.");
+        require(seller.send(depositAmount), "Deposit refund to seller failed.");
+        require(buyer.send(depositAmount - paymentAmount), "Residual deposit refund to buyer failed.");                      
     }
     
 }
