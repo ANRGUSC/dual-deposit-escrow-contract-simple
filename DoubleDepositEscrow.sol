@@ -40,8 +40,12 @@ contract DoubleDepositEscrow {
         require(buyerDeposited, "Buyer has not yet deposited");
         require(sellerDeposited, "Seller has not yet deposited");
         isApproved = true;
-        seller.transfer(paymentAmount);
-        seller.transfer(depositAmount);
-        buyer.transfer(depositAmount - paymentAmount);
+        
+        //Perform external calls 
+        require(seller.transfer(paymentAmount), "Payment to seller failed.");
+        require(seller.transfer(depositAmount), "Deposit refund to seller failed.");
+        require(buyer.transfer(depositAmount - paymentAmount), "Residual deposit refund to buyer failed.");
+              
+        
     }
 }
