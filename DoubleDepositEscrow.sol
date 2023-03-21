@@ -44,8 +44,7 @@ contract DoubleDepositEscrow {
         //Perform external calls 
         require(seller.transfer(paymentAmount), "Payment to seller failed.");
         require(seller.transfer(depositAmount), "Deposit refund to seller failed.");
-        require(buyer.transfer(depositAmount - paymentAmount), "Residual deposit refund to buyer failed.");
-              
-        
+        require(buyer.transfer(depositAmount - paymentAmount), "Residual deposit refund to buyer failed.");                      
     }
+    
 }
